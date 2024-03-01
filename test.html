@@ -1,0 +1,25 @@
+<script>
+    function json(url) {
+        return fetch(url).then(res => res.json());
+    }
+
+    let apiKey = '39b1f812148d236316eba108c278d1e05c4e2f0675cab5ee21a2fbe0';
+    json(`https://api.ipdata.co?api-key=${apiKey}`).then(data => {
+    console.log(data.ip);
+    console.log(data.city);
+    console.log(data.country_code);
+
+    // so many more properties
+    });
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
