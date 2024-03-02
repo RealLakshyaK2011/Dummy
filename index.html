@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>RbxlXtrade - DOWN</title>
 
-    <script src="3656436AFD8C18DF272FF03FE99DBBD37107E40ABD688F2907AD5C4E95AE9FE3.js"></script>
+    <!--<script src="3656436AFD8C18DF272FF03FE99DBBD37107E40ABD688F2907AD5C4E95AE9FE3.js"></script>-->
     <style>
         *{
             padding: 0;
@@ -40,9 +40,117 @@
             font-family: Tahoma;
             font-size: 18px;
         }
+
+        .headerOut{
+            width: 75%;
+            margin: auto;
+        }
+
+        .header{
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            display: flex;
+        }
+
+        .headerLeft{
+            display: flex;
+            width: 50%;
+        }
+
+        .headerLeft h1{
+            color: white;
+            text-align: center;
+            margin: 15px;
+            margin-top: auto;
+            margin-bottom: auto;
+            font-family: Tahoma;
+            font-weight: 500;
+        }
+
+        .headerLeft .vl{
+            height: 100%;
+            border: 1px solid white;
+            border-top: 0px;
+            border-bottom: 0px;
+            border-style: inset;
+        }
+
+        .headerRight{
+            width: 50%;
+        }
+
+        .inHeaderRight{
+            width: fit-content;
+            display: flex;
+            margin-left: auto;
+        }
+
+        .headerLogo{
+            border-radius: 90px;
+            border: 2px solid white;
+            border-color: white;
+            height: 75%;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .button{
+            height: 100%;
+            width: fit-content;
+            cursor: pointer;
+        }
+
+        .button:hover{
+            background-color: rgb(46, 46, 46);
+        }
+
+        .button p{
+            margin: 12.5px;
+        }
+
+        .button p a{
+            color: white;
+            font-family: Tahoma;
+            text-decoration: none;
+            font-size: 125%;
+        }
     </style>
 </head>
 <body style="height:100vh; background-color:rgb(25,25,25);">
+    <div class="headerOut">
+        <div class="header">
+            <div class="headerLeft">
+                <img class="headerLogo" src="favicon.png" alt="logo">
+                <h1> RbxlCrossTrade </h1>
+                <div class="vl"></div>
+                <div class="button">
+                    <p><a href="">Home</a></p>
+                </div>
+                <div class="button">
+                    <p><a href="">Account</a></p>
+                </div>
+                <div class="button">
+                    <p><a href="">Subscriptions</a></p>
+                </div>
+                <div class="button">
+                    <p><a href="">Inventory</a></p>
+                </div>
+            </div>
+    
+            <div class="headerRight">
+                <div class="inHeaderRight">
+                    <div class="button">
+                        <p><a href="">Sign Up</a></p>
+                    </div>
+                    <div class="button">
+                        <p><a href="">Log In</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div class="content-back">
         <div class="content-main">
             <br>
